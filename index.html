@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      
+     <link rel="stylesheet" href="css/style.css">
+           
+    <title>Formulario de contato</title>
+</head>
+<body>
+   <div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+            <h4>Contato</h4>
+            <form id="form-contato">
+                <div class="form-group">
+                    <label for="nome" class="nome">Nome</label>
+                    <input class="form-control" type="nome" id="nome" placeholder="Digite o seu nome...">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="email">E-mail</label>
+                    <input class="form-control" type="email" id="email" placeholder="Digite o seu email...">
+                </div>
+
+                <div class="form-group"></div>
+                <label for="endereco" class="endereco">Endereço</label>
+                    <input class="form-control" type="endereco" id="endereco" placeholder="Digite o seu endereço...">
+                </div>
+
+              <div class="container-2">
+                <div class="row">
+                 <div class="form-group">
+
+                    <div class="form-group">
+                    <div class="col-md-12">
+                        <label for="bairro" class="bairro">Bairro</label>
+                    <input class="form-control" type="bairro" id="bairro" placeholder="Digite o seu bairro...">
+                    </div> 
+                </div> 
+                    
+
+                    <div class="form-group">
+                    <div class="col-md-12">              
+                    <label for="cidade" class="cidade">Cidade</label>
+                    <input class="form-control" type="cidade" id="cidade" placeholder="Digite o sua cidade...">
+                    </div>
+                </div> 
+
+                    <div class="form-group">
+                    <div class="col-md-4"> 
+                    <label for="uf" class="uf" aria-placeholder="">UF</label>
+                    <select id="uf" class="form-select" aria-placeholder="">
+
+                    <option selected></option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</option>
+                   
+                </select> 
+            </div> 
+                 
+                </div>           
+                </div>
+            </div>
+        </div>
+    
+                   <div class="container-3">                                                          
+                 <div class="form-group">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Digite a mensagem..."></textarea>
+                </div> 
+                  
+                  <div class="form-group text-center pt-2" >
+                   <button type="submit" class="btn btn-primary">ENVIAR</button>
+                </div>
+
+                <div class="alert alert-danger d-none  pt-2">
+                     Preecha o campo <span id="campo-erro"></span>!
+                </div>
+                                       
+            </form>
+        </div> 
+        </div>
+    </div>
+
+
+
+         <div class="col-6">
+            <div class="card">
+                <div class="card-body">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.9001905211035!2d-37.27548548584923!3d-7.476273275784751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a8a90c50ee7c05%3A0x6cbd5685b0d56a15!2sAmericanas!5e0!3m2!1spt-BR!2sbr!4v1674554265173!5m2!1spt-BR!2sbr" 
+                     frameborder="0" style="border:0;"
+                     allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+          
+</body>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="js/formulario.js"></script>
+</html>
